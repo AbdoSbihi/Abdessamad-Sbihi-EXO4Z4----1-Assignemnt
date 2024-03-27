@@ -417,7 +417,7 @@ let rec isPalindrome (s: string) : bool =
     | _ when s.[0] <> s.[s.Length - 1] -> false // If the first and last characters don't match, it's not a palindrome
     | _ -> isPalindrome (s.[1..s.Length - 2]) // Recursively check the substring excluding the first and last characters
 
-// Example usage:
+
 printfn "%b" (isPalindrome "radar")  // true
 printfn "%b" (isPalindrome "hello")  // false
 
