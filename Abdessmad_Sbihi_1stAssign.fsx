@@ -413,9 +413,9 @@ printfn "Depth of the binary tree: %d" treeDepth
 // ex 20 
 let rec isPalindrome (s: string) : bool =
     match s.Length with
-    | len when len <= 1 -> true  // Base case: an empty string or a string with one character is a palindrome
-    | _ when s.[0] <> s.[s.Length - 1] -> false // If the first and last characters don't match, it's not a palindrome
-    | _ -> isPalindrome (s.[1..s.Length - 2]) // Recursively check the substring excluding the first and last characters
+    | len when len <= 1 -> true  
+    | _ when s.[0] <> s.[s.Length - 1] -> false 
+    | _ -> isPalindrome (s.[1..s.Length - 2]) 
 
 
 printfn "%b" (isPalindrome "radar")  // true
